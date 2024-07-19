@@ -48,16 +48,16 @@ function KeySkills(props) {
                 </div>
             )
         })}
-        <div className='row mt-3 '>
+        <div className='row mt-3 ' style={{gap:'100px'}}>
           <div className='col-sm-2 col-12 mt-3'>
-            <button className='btn btn-primary p-2'
+            <button className='btn2 btn-primary p-2'
                       onClick={AddSkill}>
                   Add-Skill
 
               </button>
           </div>
           <div className='col-sm-2 col-12 mt-3'>
-            <button className='btn btn-primary p-2'
+            <button className='btn2 btn-primary p-2'
                       onClick={RemoveSkill}>
                   Remove
 

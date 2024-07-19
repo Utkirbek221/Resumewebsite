@@ -1,50 +1,53 @@
-
-.no-text-decoration{
-  text-decoration: none;
-  
-}
-.list-item{
-  padding:10px;
+.list-item {
+  padding: 10px;
   font-size: 20px;
 }
-.modal{
+.modal {
   display: none;
 }
-
-.block{
+.block {
   display: block;
-  background-color: rgba(50,50,50,0.5);
+  background-color: rgba(50, 50, 50, 0.5);
 }
-.resume{
-  margin:20px;
+.resume {
+  margin: 20px;
   margin-left: 50px;
 }
 /* The side navigation menu */
+.row
 .sidebar {
   margin: 0;
-  padding: 50px 20px;
+  padding: 20px 20px;
   height: 100%;
   overflow: auto;
 }
-
+.no-text-decoration:hover{
+  color: #F7E7DC;
+}
+.no-text-decoration {
+  text-decoration: none;
+  color: #F7E7DC;
+}
 /* Sidebar links */
 .sidebar li {
   display: block;
-  border: 1px solid #4f81c7;
-  padding: 16px;
+  border: 1px solid #F7E7DC;
+  border-radius: 10px;
+  color: #F7E7DC;
+  padding: 16px 40px;
   text-decoration: none;
   font-size: 22px;
+  margin-top: 25px;
 }
-
 /* Links on mouse-over */
-.sidebar li:hover{
-  background-color:white;
-  ;
+.sidebar li:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
-
 /* Page content.  */
 div.content {
   padding: 1px 16px;
+  background-color: #FFF8F3;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -53,7 +56,9 @@ div.content {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin:0;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 1px;
     /* display: none; */
     /* height:80px; */
@@ -62,34 +67,58 @@ div.content {
   .sidebar li {
     float: left;
     font-size: 20px;
+    margin-top: 0px;
   }
-  div.content {margin-left: 0;
-              margin-top: 30px;
-              background-color: #f7f7f7;}
-  .resume{margin: 1px;}
+  div.content {
+    margin-left: 0;
+    margin-top: 30px;
+    background-color: #FFF8F3;
+  }
+  .resume {
+    margin: 1px;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1px;
+  }
   .sidebar li {
     text-align: center;
     float: none;
     font-size: 12px;
+    margin-top: 0px;
   }
 }
 
-.input-style:focus{
-  border:5px solid rgba(63, 136, 239, 0.4);
-  outline:none;
+.input-style:focus {
+  border: 5px solid rgba(63, 136, 239, 0.4);
+  outline: none;
 }
 
-.input-style{
-  width:100%;
-  border:1px solid rgb(207, 207, 207);
-  padding:6px;
-  border-radius:8px;
+.input-style {
+  width: 100%;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 6px;
+  border-radius: 8px;
 }
 
-.image-aspect-ratio{
-aspect-ratio: 0.9;
+.image-aspect-ratio {
+  aspect-ratio: 0.9;
+}
+body {
+  background-color: #758694;
+}
+
+.navbar-toggler {
+  border: 1px solid #f7e7dc;
+  color: #f7e7dc;
 }

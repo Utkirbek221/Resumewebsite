@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { updateState} from '../../ReduxManager/dataStoreSlice'
-  
+import imgdef from "../../IMG/avatardf.webp"
 function App() {
     const imageFile= useSelector(state=> state.dataStore.imageFile)
     const dispatch = useDispatch();
@@ -25,16 +25,13 @@ function App() {
         }
     }
     return (
-        <div className="container">
-    
+        <div className="container img_css">
             <div className="row">
-                <img style={{height:'150px', width:'100px', background:'grey',padding:0}} src={imageFile} alt='profile'/>
+                <img style={{height:'150px', width:'130px', background:'grey',padding:0, objectFit:'cover'}} className="rounded " src={imageFile ? imageFile : imgdef}  alt='profile'/>
             </div>
-            <div className="row">
-                <input type="file" onChange={handleChange} />
+            <div className="row" style={{marginTop:'10px'}}>
+                <input type="file" onChange={handleChange} style={{ display:'flex'}}/>
             </div>
-            
-  
         </div>
     );
 } 

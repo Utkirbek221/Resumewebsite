@@ -41,10 +41,9 @@ function DetailsFillingPage() {
   
   return (
     <div>
-      <div className="container text-center" style={{ maxWidth:"1920px",marginTop:"12px",backgroundColor:"#fafafa",}}>
+      <div className="container text-center" style={{ maxWidth:"1920px",marginTop:"12px",backgroundColor:"#758694",}}>
         <div >
               <div className='row' style={{minHeight:'100vh'}}>
-
                     <div className=" col-lg-3 col-sm-12 col-12 sidebar"  >
                             <li className="list-item" onClick={onSideNavLinkClick}>
                               {/* condition is applied to the Link when 'isFormValid'=== true, then the link is active and directs the user to the next page otherwise the link is inactive */}
@@ -69,8 +68,6 @@ function DetailsFillingPage() {
                             </li>
 
                     </div>
-                
-                
                     <div className="content col-lg-9 col-sm-12 col-12" style={{border:"solid grey 2px", boxShadow: "5px 5px 8px 10px #888888"}}>
                       {/* these are the nested routes of detailsfillingpage, which helps in rendering different component- personalInfo, workEx, education & keySkills , inside detailsfillingpage when the user clicks on next button or navigate through links of sideNavbar */}
                           <Routes>
